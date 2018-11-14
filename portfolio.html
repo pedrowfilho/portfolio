@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="topo">
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="logomarca pedro wagner"></a>
+		</div>
+		<div class="menu">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="portfolio.html">Portolio</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="fadeIn">
+		<div class="container">
+			<div class="mySlides">
+				<div class="conteudo_texto">
+					<h1>Grafo</h1>
+					<p>
+						Análise da rede social twitter e o seu comportamento em torno do tema eleições 2018, abordando como termos específicos da pesquisa as hashtags #elesim, #elenao.<br>
+						Os dados para esta pesquisa foram coletados através do software Gephi juntamente com o plugin TwitterStreamingImporter no dia 04 de outubro de 2018.<br>
+						Foram obtidos 2.478 nós e 4.463 arestas no período de duas a três horas de mineração.
+					</p>
+				</div>
+				<div class="conteudo_img">
+					<img src="img/grafo.png" alt="grafo">
+				</div>
+			</div>
+
+			<div class="mySlides">
+				<div class="conteudo_texto">
+					<h1>Animação</h1>
+					<p>
+						Atividade de animação quadro a quadro realizada na disciplina de Autoração Multimídia I do Curso de Sistemas e Mídias Digitais/UFC.
+					</p>
+				</div>
+				<div class="conteudo_img">
+					<img src="img/correndo_anim.gif" alt="animação correndo">
+				</div>
+			</div>
+
+			<div class="mySlides">
+				<div class="conteudo_texto">
+					<h1>Puppet Warp</h1>
+					<p>
+						Efeito puppet warp aplicado na imagem utilizando o Pixlr (aplicativo online) realizado na disciplina de Autoração Multimídia I do Curso de Sistemas e Mídias Digitais/UFC.
+					</p>
+				</div>
+				<div class="conteudo_img">
+					<img src="img/puppet_warp.gif" alt="puppet warp">
+				</div>
+			</div>
+			<div class="mySlides">
+				<div class="conteudo_texto">
+					<h1>Efeito Iconatomy</h1>
+					<p>
+						Efeito aplicado em imagens onde se assemelham duas pessoas e se sobrepoem as imagens, criando o efeito. A imagem ao lado trata-se  de Jim Carrey quando mais novo (em colorido) mesclado a uma foto minha (em preto e branco).
+					</p>
+				</div>
+				<div class="conteudo_img">
+					<img src="img/iconatomy.png" alt="corvo">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	<a class="next" onclick="plusSlides(1)">❯</a>
+
+	<div class="clearfix">
+		<div class="row">
+		    <div class="column">
+		    	<img class="demo cursor" src="img/grafo.png" style="width:100%" onclick="currentSlide(1)" alt="mãos sujas">
+		    </div>
+		    <div class="column">
+		    	<img class="demo cursor" src="img/correndo_anim.gif" style="width:100%" onclick="currentSlide(2)" alt="animacao correndo">
+		    </div>
+		    <div class="column">
+		    	<img class="demo cursor" src="img/puppet_warp.gif" style="width:100%" onclick="currentSlide(3)" alt="puppet warp">
+		    </div>
+		    <div class="column">
+		    	<img class="demo cursor" src="img/iconatomy.png" style="width:100%" onclick="currentSlide(4)" alt="iconatomy">
+		    </div>
+	    </div>
+	</div>
+  	<script src="js/script.js"></script>
+</body>
+</html>
