@@ -1,0 +1,352 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: #090c02;
+}
+
+h1 {
+	font-family: "Playfair Display SC", serif;
+	color: #ff3644;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+p {
+	font-family: "Playfair Display", serif;
+	color: #dde2c6;
+}
+
+.topo {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	display: inline;
+	margin-right: 10px;
+}
+
+.logo img {
+	float: left;
+	margin: 10px;
+	width: 6%;
+}
+
+.logo_inicio {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -160px;
+	margin-top: -160px;
+}
+
+.menu nav {
+	position: relative;
+	top: 40px;
+}
+
+.menu nav ul {
+	float: right;
+	margin: 0px;
+}
+
+.menu nav ul li {
+	display: inline;
+	width: 80px;
+	text-align: center;
+}
+
+.menu nav ul li a {
+	color: #dde2c6;
+	text-decoration: none;
+	text-transform: uppercase; /* letra maiúscula */
+	font-size: 1em;
+	font-family: "Playfair Display SC", serif;
+	padding: 5px;
+}
+
+.menu a:hover {
+	background-color: rgba(255, 54, 68, 0.8);
+}
+
+.container {
+	/*position: relative;*/
+	margin-top: 100px;
+	max-width: 100%;
+}
+
+.mySlides{
+	/*position: relative;*/
+	width: 100%;
+	height: 580px;
+	/*margin-top: 15%;*/
+	display: none;
+}
+
+.mySlides2{
+	/*position: relative;*/
+	margin-top: 100px;
+	max-width: 100%;
+	width: 100%;
+	margin-left: 6%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.conteudo_texto{
+	float: left;
+	width: 35%;
+	margin-left: 10%;
+}
+
+.conteudo_img img {
+	max-width: 100%;
+	float: right;
+	width: 35%;
+	margin-right: 10%;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #dde2c6;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(255, 54, 68, 0.8);
+}
+
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	width: 100%;
+	bottom: 0;
+}
+
+.column {
+	float: left;
+	width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	margin: 10px;
+	clear: both;
+	z-index: 1;
+}
+
+footer h6{
+	font-family: "Playfair Display", serif;
+	font-size: 10px;
+	line-height: 1.8em;
+	text-align: center;
+}
+
+/* css formulário de contato */
+fieldset {
+	border: 0;
+}
+
+body, input, select, textarea, button {
+    font-family: "Playfair Display", serif;
+    font-size: 1em;
+    color: #dde2c6;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #dde2c6;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #ff3644;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao, select {
+    cursor: pointer;
+}
+
+@keyframes transition {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.img_anim {
+	animation: pulse 1.5s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+
+.img_anim:hover {
+	border-radius: 50%;
+}
+
+.social {
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	bottom: 10px;
+}
+
+.social img {
+	width: 30px;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+		-webkit-filter: brightness(100%);
+	}
+	100% {
+		-webkit-transform: scale(1.1);
+		-webkit-filter: brightness(200%);
+	}
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(15%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(200%);
+  }
+}
+
+/* Fade no carregamento da página */
+@-webkit-keyframes fadeIn {
+	0% { 
+		opacity: 0; 
+	}
+	100% {
+		opacity: 1;
+	} 
+}
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.fadeIn, .conteudo_img {
+	-webkit-animation: fadeIn 1.5s ease-in-out;
+	-moz-animation: fadeIn 1.5s ease-in-out;
+	-o-animation: fadeIn 1.5s ease-in-out;
+	animation: fadeIn 1.5s ease-in-out;
+}
