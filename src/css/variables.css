@@ -1,0 +1,18 @@
+:root {
+    --bgcolor1: #292F36;
+    --bgcolor2: #1A1E23;
+    --brand1: #12f7d6;
+    --brand2: #98faec;
+    --grey: #43454d;
+    --white: #ffffff;
+    --black: #000;
+    --html: #e54f26;
+    --css: #0c73b8;
+    --js: #e7a020;
+    --react: #28a9e0;
+
+    --font-ibm-plex-mono: "IBM Plex Mono", monospace;
+    --font-ubuntu: "Ubuntu", sans-serif;
+
+    --max-width-container: 1920px;
+}

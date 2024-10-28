@@ -1,0 +1,125 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 100vh; */
+}
+
+/* ------------------ HEADER ----------------- */
+
+.header{
+  border: 3px solid red;
+  background-color: var(--bgcolor1);
+}
+
+.header .header-container {
+  border: 3px solid green;
+  display: flex;
+  padding: 25px 50px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px; /* para não ficar estranho no mobile */
+  font-family: var(--font-ibm-plex-mono);
+  color: var(--white);
+  /* border-bottom: 1px solid var(--grey); */
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header .logo h1 {
+  font-weight: 500;
+  line-height: 42px;
+  transition: 0.3s;
+}
+
+.header .logo a:hover h1{
+  color: var(--brand1);
+}
+
+.header .logo h1,
+.header .logo .sinal {
+  font-size: 2rem;
+}
+
+
+.header .logo .sinal {
+  color: var(--brand1);
+}
+
+.header .logo a {
+  color: var(--white);
+}
+
+/* ------------------ HOME ----------------- */
+
+.home {
+  border: 3px solid blue;
+  background-color: var(--bgcolor1);
+  height: 100vh;
+}
+
+.home .side-menu {
+  background-color: var(--bgcolor2);
+  width: 48px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 25px;
+  margin: 30px 0 0 30px;
+  border-radius: 40px;
+}
+
+.home .side-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ------------------ ABOUT ----------------- */
+
+.about {
+  border: 3px solid yellow;
+  /* background-color: var(--bgcolor1); */
+  height: 100vh;
+}
+
+/* ------------------ SKILLS ----------------- */
+
+.skills {
+  border: 3px solid red;
+  /* background-color: var(--bgcolor1); */
+  height: 100vh;
+}
+
+/* ------------------ PROJECTS ----------------- */
+
+.projects {
+  border: 3px solid green;
+  /* background-color: var(--bgcolor1); */
+  height: 100vh;
+}
+
+/* ------------------ CONTACT ----------------- */
+
+.contact {
+  border: 3px solid blue;
+  /* background-color: var(--bgcolor1); */
+  height: 100vh;
+}
+
+/* ------------------ FOOTER ----------------- */
+
+.footer {
+  border: 3px solid black;
+  /* background-color: var(--bgcolor1); */
+  /* height: 100vh; */
+}
