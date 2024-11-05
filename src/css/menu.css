@@ -1,31 +1,33 @@
-.header .menu ul {
+.header-menu {
   display: flex;
-  /* gap: 20px; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-right: 25px;
 }
 
-.header .menu ul li a {
-  font-size: 1.6rem;
-  font-weight: 400;
+.header-menu li a {
+  font-size: 1.8rem;
   color: var(--white);
-  padding: 8px 20px;
+  padding: 8px 16px;
   transition: 0.3s;
   border-radius: 50px;
 }
 
-.header .menu ul li a:hover {
+.header-menu li a:hover {
   background-color: var(--brand1);
 }
 
 /* ------------------ RESPONSIVO ----------------- */
 
-.menu .menu2 {
+.header .menu2 {
   display: none;
   width: 60px;
   height: 60px;
   align-self: flex-end;
 }
 
-.header-container .menu label {
+.header label {
   display: flex;
   flex-direction: column;
 }
@@ -60,52 +62,55 @@
   bottom: -10px;
 }
 
-.menu input {
+.header input {
   display: none;
 }
 
-.menu input:checked ~ label .hamburguer {
+.header input:checked ~ label .hamburguer {
   transform: rotate(45deg);
 }
 
-.menu input:checked ~ label .hamburguer:before {
+.header input:checked ~ label .hamburguer:before {
   transform: rotate(90deg);
   top: 0;
 }
 
-.menu input:checked ~ label .hamburguer:after {
+.header input:checked ~ label .hamburguer:after {
   transform: rotate(90deg);
   bottom: 0;
 }
 
 @media (max-width: 900px) {
-  .menu .menu2 {
+  .header .menu2 {
     display: block;
   }
 
-  .header .menu ul {
+  .header-menu {
     display: none;
   }
 
-  .menu input:checked ~ ul {
+  .header input:checked ~ .header-menu {
     display: block;
   }
 
-  .header-container .menu {
+  .header .header-menu {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 80px;
+    right: 50px;
     z-index: 1; /* posiciona o menu por cima de tudo que tem na página */
   }
 
-  .header-container .menu ul {
-    width: 200px;
-    /* padding: 20px; */
+  .header .header-menu {
+    width: 160px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 20px;
   }
-ag
-  .header-container .menu ul a {
+
+  .header .header-menu li a {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     display: block;
+    color: var(--bgcolor1);
   }
 }

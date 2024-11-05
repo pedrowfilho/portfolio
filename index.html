@@ -17,36 +17,36 @@
     />
   </head>
   <body>
+    
     <header class="header">
-      <div class="header-container">
-        <div class="logo">
-          <span class="sinal">&lt;PW/&gt;</span
-          ><a href="#"><h1>PedroWagner</h1></a>
-        </div>
-
-        <nav class="menu">
-          <input type="checkbox" id="menu-harburguer" />
-          
-          <label for="menu-harburguer">
-            <div class="menu2">
-              <span class="hamburguer"></span>
-            </div>
-          </label>
-
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>
+      <div class="header-logo">
+        <span class="sinal">&lt;PW/&gt;</span
+        ><a href="#"><h1>PedroWagner</h1></a>
       </div>
+      <nav>
+        <input type="checkbox" id="menu-harburguer" />
+
+        <label for="menu-harburguer">
+          <div class="menu2">
+            <span class="hamburguer"></span>
+          </div>
+        </label>
+
+        <ul class="header-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </header>
+    
+    <hr class="line">
 
     <section class="home" id="home">
-      <nav class="side-menu">
-        <ul>
+      <nav class="nav-side-menu">
+        <ul class="side-menu">
           <li>
             <a href="#"
               ><img src="./src/images/default.png" alt="icon default"
@@ -76,6 +76,68 @@
             <a href="#"
               ><img src="./src/images/contact.png" alt="icon default"
             /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="card-profile">
+        <img src="./src/images/profile-photo-pedro.jpg" alt="" />
+        <h2>Pedro Wagner</h2>
+        <p>Front End Developer</p>
+        <div class="card-contact">
+          <p>pedrowagner84@gmail.com</p>
+          <p>Fortaleza, Ceará - Brasil</p>
+          <p>Full-time</p>
+          <p>/in/pedrowagnerdev</p>
+        </div>
+
+        <div class="buttons">
+          <span class="button-icon">html</span>
+          <span class="button-icon">css</span>
+          <span class="button-icon">JS</span>
+          <span class="button-icon">git</span>
+        </div>
+
+        <a href="#" class="btn-download">Download CV</a>
+      </div>
+
+      <div class="info">
+        <h1>Front End Developer</h1>
+
+        <span class="tag">&lt;h1&gt;</span>
+        <p>
+          Hey,<br />
+          I'm <span class="tag-text">Pedro Wagner</span>,
+        </p>
+        <p>Front End Developer <span class="tag">&lt;/h1&gt;</span></p>
+        <span class="tag-p">&lt;p&gt;</span>
+        <p class="text">
+          I help business grow by crafting amazing web experiences. If you’re
+          looking for a developer that likes to get stuff done,
+        </p>
+        <span class="tag">&lt;/p&gt;</span>
+        <span class="lets-talk"> Let's Talk </span>
+      </div>
+
+      <nav class="nav-features">
+        <ul class="card-features">
+          <li>
+            <div class="tag-features">
+              <span class="number">4</span>
+              <p class="text">Programming <br> Language</p>
+            </div>
+          </li>
+          <li>
+            <div class="tag-features">
+              <span class="number">4</span>
+              <p class="text">Programming <br> Language</p>
+            </div>
+          </li>
+          <li>
+            <div class="tag-features">
+              <span class="number">4</span>
+              <p class="text">Programming <br> Language</p>
+            </div>
           </li>
         </ul>
       </nav>

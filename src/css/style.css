@@ -1,87 +1,263 @@
 body {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  /* height: 100vh; */
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--bgcolor1);
+  color: var(--white);
 }
 
 /* ------------------ HEADER ----------------- */
 
-.header{
-  border: 3px solid red;
-  background-color: var(--bgcolor1);
-}
-
-.header .header-container {
-  border: 3px solid green;
+.header {
   display: flex;
-  padding: 25px 50px;
   justify-content: space-between;
   align-items: center;
-  min-height: 75px; /* para não ficar estranho no mobile */
+  padding: 20px 0;
   font-family: var(--font-ibm-plex-mono);
-  color: var(--white);
-  /* border-bottom: 1px solid var(--grey); */
 }
 
-.header .logo {
+.header-logo {
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-left: 25px;
 }
 
-.header .logo h1 {
+.header-logo h1 {
+  font-size: 2rem;
   font-weight: 500;
   line-height: 42px;
-  transition: 0.3s;
+  letter-spacing: 2px;
+  color: var(--white);
 }
 
-.header .logo a:hover h1{
+.header-logo .sinal {
   color: var(--brand1);
-}
-
-.header .logo h1,
-.header .logo .sinal {
   font-size: 2rem;
 }
 
-
-.header .logo .sinal {
-  color: var(--brand1);
-}
-
-.header .logo a {
-  color: var(--white);
+.line {
+  width: 90%;
+  border: 1px solid #43454D;
+  align-self: center;
 }
 
 /* ------------------ HOME ----------------- */
 
 .home {
-  border: 3px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
   background-color: var(--bgcolor1);
   height: 100vh;
 }
 
-.home .side-menu {
+.nav-side-menu {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+  margin-top: 80px;
+}
+
+.side-menu {
   background-color: var(--bgcolor2);
   width: 48px;
   height: 250px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 25px;
-  margin: 30px 0 0 30px;
-  border-radius: 40px;
-}
-
-.home .side-menu ul {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 8px 25px;
+  border-radius: 40px;
   gap: 16px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 30%;
+  align-self: center;
+  font-family: var(--font-ubuntu);
+}
+
+.info h1 {
+  color: var(--brand2, #98faec);
+  font-family: var(--font-ubuntu);
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 134px;
+  margin-bottom: 24px;
+}
+
+.info .tag {
+  color: var(--brand2, #98faec);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.info .tag-text {
+  color: var(--brand1, #12f7d6);
+  font-family: Ubuntu;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.info p {
+  color: var(--white, #fff);
+  font-family: var(--font-ubuntu);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  padding: 0 16px;
+}
+
+.info .tag-p {
+  color: var(--brand2, #98faec);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 32px;
+}
+
+.info .text {
+  color: var(--white, #fff);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 20px;
+  padding: 0 24px;
+  margin: 16px 0;
+}
+
+.info .lets-talk {
+  color: var(--brand1, #12f7d6);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: capitalize;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.card-profile {
+  border: 3px solid var(--white);
+  box-shadow: -4px -4px 1px var(--brand1);
+  display: inline-flex;
+  width: 320px;
+  height: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-end;
+  text-align: center;
+  margin-bottom: 12%;
+  padding: 16px;
+  border-radius: 150px 0 150px 0;
+  font-family: var(--font-ibm-plex-mono);
+}
+
+.card-profile img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 16px auto 16px;
+}
+
+.card-profile h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.card-profile p {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.card-contact {
+  text-align: left;
+  padding: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8px;
+  gap: 16px;
+}
+
+.buttons .button-icon {
+  background-color: var(--brand1);
+  color: var(--bgcolor1);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.btn-download {
+  background-color: var(--white);
+  font-family: var(--font-ubuntu);
+  font-size: 20px;
+  display: inline-block;
+  width: 220px;
+  color: var(--bgcolor1);
+  padding: 16px 30px;
+  border-radius: 32px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.nav-features {
+  display: flex;
+  align-items: flex-start;
+  align-self: center;
+  margin-bottom: 120px;
+}
+
+.card-features {
+  display: flex;
+  padding: 48px 32px;
+  flex-direction: column;
+  gap: 48px;
+  border-radius: 80px;
+  background: var(--bgcolor2, #1a1e23);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tag-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.tag-features .text {
+  color: var(--white, #fff);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.tag-features .number {
+  color: var(--brand1, #12f7d6);
+  font-family: var(--font-ibm-plex-mono);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62px;
 }
 
 /* ------------------ ABOUT ----------------- */
