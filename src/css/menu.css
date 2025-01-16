@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  margin-right: 25px;
 }
 
 .header-menu li a {
@@ -16,15 +15,15 @@
 
 .header-menu li a:hover {
   background-color: var(--brand1);
+  color: var(--bgcolor1);
 }
-
-/* ------------------ RESPONSIVO ----------------- */
 
 .header .menu2 {
   display: none;
   width: 60px;
   height: 60px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .header label {
@@ -80,37 +79,3 @@
   bottom: 0;
 }
 
-@media (max-width: 900px) {
-  .header .menu2 {
-    display: block;
-  }
-
-  .header-menu {
-    display: none;
-  }
-
-  .header input:checked ~ .header-menu {
-    display: block;
-  }
-
-  .header .header-menu {
-    position: absolute;
-    top: 80px;
-    right: 50px;
-    z-index: 1; /* posiciona o menu por cima de tudo que tem na página */
-  }
-
-  .header .header-menu {
-    width: 160px;
-    padding: 10px;
-    background-color: var(--white);
-    border-radius: 20px;
-  }
-
-  .header .header-menu li a {
-    text-align: center;
-    padding: 10px;
-    display: block;
-    color: var(--bgcolor1);
-  }
-}

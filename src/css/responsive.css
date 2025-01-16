@@ -1,0 +1,77 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 900px) {
+  .home {
+    flex-wrap: wrap;
+    height: 100%;
+    text-align: center;
+  }
+  .header .menu2 {
+    display: block;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header input:checked ~ .header-menu {
+    display: block;
+  }
+
+  .header .header-menu {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    z-index: 1;
+    width: 160px;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+  .header .header-menu li a {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    color: var(--bgcolor1);
+  }
+  
+  .home {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .about .text-about {
+    width: 90%;
+    padding: 16px;
+    font-size: 1.2rem;
+  }
+
+  .about .photo img {
+    /* width: 100%;
+    height: auto; */
+    display: none;
+  }
+  
+  .card-profile {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+
+  .info .lets-talk {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}

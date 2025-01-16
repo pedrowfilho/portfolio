@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Pedro Wagner | Front End Developer</title>
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/variables.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +25,6 @@
     />
   </head>
   <body>
-    
     <header class="header">
       <div class="header-logo">
         <span class="sinal">&lt;PW/&gt;</span
@@ -41,54 +48,21 @@
         </ul>
       </nav>
     </header>
-    
-    <hr class="line">
 
-    <section class="home" id="home">
-      <nav class="nav-side-menu">
-        <ul class="side-menu">
-          <li>
-            <a href="#"
-              ><img src="./src/images/default.png" alt="icon default"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./src/images/about-me.png" alt="icon default"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./src/images/skills.png" alt="icon default"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./src/images/projects.png" alt="icon default"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./src/images/blogs.png" alt="icon default"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./src/images/contact.png" alt="icon default"
-            /></a>
-          </li>
-        </ul>
-      </nav>
+    <hr class="line" />
 
-      <div class="card-profile">
-        <img src="./src/images/profile-photo-pedro.jpg" alt="" />
+    <main class="home" id="home">
+      <section class="card-profile">
+        <img src="./src/images/profile-photo.png" alt="avatar de perfi" />
         <h2>Pedro Wagner</h2>
         <p>Front End Developer</p>
         <div class="card-contact">
           <p>pedrowagner84@gmail.com</p>
           <p>Fortaleza, Ceará - Brasil</p>
-          <p>Full-time</p>
-          <p>/in/pedrowagnerdev</p>
+          <!-- <p>Full-time</p> -->
+          <a href="https://www.linkedin.com/in/pedrowagnerdev" target="_blank"
+            >in/pedrowagnerdev</a
+          >
         </div>
 
         <div class="buttons">
@@ -98,56 +72,98 @@
           <span class="button-icon">git</span>
         </div>
 
-        <a href="#" class="btn-download">Download CV</a>
-      </div>
+        <a
+          href="https://docs.google.com/document/d/1OW3idP7vp1u7ZSDMrjli81-m2_zQwt2P/edit?usp=drive_link&ouid=100706027283491782174&rtpof=true&sd=true"
+          class="btn-download"
+          target="_blank"
+          >Download CV</a
+        >
+      </section>
 
-      <div class="info">
-        <h1>Front End Developer</h1>
+      <section class="info">
+        <!-- <h1>Front End Developer</h1> -->
 
-        <span class="tag">&lt;h1&gt;</span>
-        <p>
-          Hey,<br />
-          I'm <span class="tag-text">Pedro Wagner</span>,
-        </p>
-        <p>Front End Developer <span class="tag">&lt;/h1&gt;</span></p>
-        <span class="tag-p">&lt;p&gt;</span>
+        <div class="text-hello">
+          <span class="tag">&lt;h1&gt;</span>
+          <p>
+            Olá,<br />
+            Eu sou <span class="tag-text">Pedro Wagner</span>,
+          </p>
+          <p>
+            Desenvolvedor Web Front End <span class="tag">&lt;/h1&gt;</span>
+          </p>
+        </div>
+        <span class="tag">&lt;p&gt;</span>
         <p class="text">
-          I help business grow by crafting amazing web experiences. If you’re
-          looking for a developer that likes to get stuff done,
+          Minha missão é transformar desafios em soluções web intuitivas e
+          funcionais que impulsionem a transformação digital e a experiência do
+          usuário. <br />
+          <br />
+          Se você procura um <span class="tag">Desenvolvedor Web dedicado</span>
         </p>
         <span class="tag">&lt;/p&gt;</span>
-        <span class="lets-talk"> Let's Talk </span>
-      </div>
+        <span class="lets-talk"> Contate-me! </span>
+      </section>
+    </main>
 
-      <nav class="nav-features">
-        <ul class="card-features">
-          <li>
-            <div class="tag-features">
-              <span class="number">4</span>
-              <p class="text">Programming <br> Language</p>
-            </div>
-          </li>
-          <li>
-            <div class="tag-features">
-              <span class="number">4</span>
-              <p class="text">Programming <br> Language</p>
-            </div>
-          </li>
-          <li>
-            <div class="tag-features">
-              <span class="number">4</span>
-              <p class="text">Programming <br> Language</p>
-            </div>
-          </li>
-        </ul>
-      </nav>
+    <section class="about" id="about">
+      <div class="text-about">
+        <h2 class="about-me">Quem sou?</h2>
+        <span class="tag">&lt;p&gt;</span>
+        <p>
+          Eu sou Pedro Wagner, graduando em Sistemas e Mídias Digitais pela
+          Universidade Federal do Ceará, atualmente no sétimo semestre, e
+          estudante do programa Dev Quest - Dev em Dobro com foco em
+          Desenvolvimento Web Full Stack. <br /><br />
+          Durante 20 anos atuei no Governo do Estado do Ceará, com destaque para
+          minha experiência consolidada na área financeira/administrativa. Em
+          transição de carreira para o setor de tecnologia, estou me
+          especializando em <span class="tag">HTML</span>,
+          <span class="tag">CSS</span>, <span class="tag">JavaScript</span> e
+          <span class="tag">Frameworks modernos</span>, desenvolvendo
+          habilidades para criar interfaces web responsivas e intuitivas.
+          <br /><br />
+          Tenho como objetivo contribuir com projetos que impulsionem a
+          transformação digital e melhorem a experiência do usuário. Busco
+          oportunidades que me desafiem e permitam aplicar meu conhecimento
+          técnico aliado à minha experiência em gestão e análise.
+        </p>
+        <span class="tag">&lt;/p&gt;</span>
+      </div>
+      <div class="photo">
+        <img src="./src/images/profile-photo-pedro.jpg" alt="foto de perfil" />
+      </div>
     </section>
 
-    <section class="about" id="about">Sobre</section>
+    <section class="skills" id="skills">
+      <div class="container-skills">
+        <h2 class="titulo-da-secao">Stack de desenvolvimento</h2>
+        <!-- <span class="tag">&lt;img&gt;</span> -->
+        <!-- <div> -->
+          <div class="icon">
+            <img src="./src/images/html-icon.png" alt="icone html" />
+            <span class="html">HTML</span>
+          </div>
+          <div class="icon">
+            <img src="./src/images/css-icon.png" alt="icone html" />
+            <span class="css">CSS</span>
+          </div>
+          <div class="icon">
+            <img src="./src/images/js-icon.png" alt="icone html" />
+            <span class="js">JS</span>
+          </div>
+          <div class="icon">
+            <img src="./src/images/git-icon-2.png" alt="icone html" />
+            <span class="git">GIT</span>
+          </div>
+        <!-- </div> -->
+        <!-- <span class="tag">&lt;/img&gt;</span> -->
+      </div>
+    </section>
 
-    <section class="skills" id="skills">Skills</section>
-
-    <section class="projects" id="projects" id>Projetos</section>
+    <section class="projects" id="projects">
+      <h2>Projetos (em construção)</h2>
+    </section>
 
     <section class="contact" id="contact">Contato</section>
 
