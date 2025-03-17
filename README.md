@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para 
 
 ## 🔗 Acesse o Portfólio
 
-[Visualizar Portfólio Online](https://seulinkdoprototipo.com)
+[Visualizar Portfólio Online](https://pedrowfilho.github.io/portfolio/)
 
 ## 📖 Sobre o Projeto
 
