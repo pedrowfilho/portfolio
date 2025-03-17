@@ -4,7 +4,7 @@ Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para 
 
 ## 🔗 Acesse o Portfólio
 
-[Visualizar Portfólio Online](https://seulinkdoprototipo.com) *(substitua pelo link do seu portfólio ao vivo)*
+[Visualizar Portfólio Online](https://seulinkdoprototipo.com)
 
 ## 📖 Sobre o Projeto
 
@@ -16,17 +16,16 @@ Este portfólio foi criado com o objetivo de:
 ## 🎯 Funcionalidades
 
 - **Página Inicial:** Breve introdução sobre mim e minhas habilidades.
-- **Sobre Mim:** Informações sobre minha jornada e minhas áreas de interesse.
-- **Projetos:** Lista de projetos desenvolvidos com descrições, tecnologias utilizadas e links para visualização.
-- **Contato:** Formulário de contato funcional e links para minhas redes sociais.
+- **Quem sou:** Informações sobre minha jornada e minhas áreas de interesse.
+- **Stack de desenvolvimento:** Lista de tecnologias e ferramentas utilizadas no desenvolvimento de projetos. (em desenvolvimento)
+- **Contato:** Formulário de contato funcional e links para minhas redes sociais. (em desenvolvimento)
 
 ## 🛠️ Tecnologias Utilizadas
 
 ### Front-End:
 - **HTML5**
 - **CSS3** (incluindo Flexbox)
-- **JavaScript**
-- **Frameworks/Libraries:** *(adicione se utilizar, como React, Vue, etc.)*
+- **Frameworks/Libraries:**
 
 ### Ferramentas de Desenvolvimento:
 - **Visual Studio Code** para escrever, editar e gerenciar código.
@@ -37,7 +36,7 @@ Este portfólio foi criado com o objetivo de:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/portfolio.git
+   git clone https://github.com/pedrowfilho/portfolio.git
    ```
 
 2. Acesse a pasta do projeto:
@@ -46,8 +45,6 @@ Este portfólio foi criado com o objetivo de:
    ```
 
 3. Abra o arquivo `index.html` em seu navegador para visualizar o projeto localmente.
-
-*(Adapte conforme a estrutura do seu projeto)*
 
 ## 🌟 Projetos em Destaque
 
@@ -61,9 +58,9 @@ Descrição breve do projeto, tecnologias utilizadas e [link para o projeto](htt
 
 ## 📧 Contato
 
-- **E-mail:** seuemail@dominio.com
-- **LinkedIn:** [Seu Nome no LinkedIn](https://linkedin.com/in/seuusuario)
-- **GitHub:** [Seu Perfil no GitHub](https://github.com/seuusuario)
+- **E-mail:** pedrowagner84@gmail.com
+- **LinkedIn:** [Pedro Wagner](www.linkedin.com/in/pedrowagnerdev)
+- **GitHub:** [Seu Perfil no GitHub](https://github.com/pedrowfilho)
 
 ---
 
